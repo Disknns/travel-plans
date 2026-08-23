@@ -4324,6 +4324,32 @@
           map.setZoomAndCenter(d.zoom || 14, d.center);
         }
 
+        // 画当天路线：按 transports 逐段连线（path 坐标或缺省时用起止点直线）
+        (d.transports || []).forEach(t => {
+          const getPt = (idx) => {
+            if (idx === 0) return D.hotel && D.hotel.lng ? [D.hotel.lng, D.hotel.lat] : null;
+            const p = d.pois.find(poi => poi.idx === idx);
+            return p && p.lng != null ? [p.lng, p.lat] : null;
+          };
+          const a = getPt(t.from_idx), b = getPt(t.to_idx);
+          const path = (t.path && t.path.length >= 2)
+            ? t.path
+            : (a && b ? [a, b] : null);
+          if (!path) return;
+          const modeColors = { walking:'#22c55e', transit:'#3b82f6', bicycling:'#f59e0b', driving:'#ef4444' };
+          const poly = new AMap.Polyline({
+            path,
+            strokeColor: modeColors[t.mode] || '#94a3b8',
+            strokeWeight: 4,
+            strokeOpacity: 0.75,
+            strokeStyle: 'dashed',
+            lineJoin: 'round',
+            lineCap: 'round'
+          });
+          map.add(poly);
+          mapLayers.push(poly);
+        });
+
         // 酒店 marker（每日都画，方便看锚点位置）
         if (D.hotel && D.hotel.lng && D.hotel.lat) {
           const hotelMarker = new AMap.Marker({
