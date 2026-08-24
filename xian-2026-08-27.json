@@ -45,16 +45,16 @@
    }
   ],
   "price": {
-   "min": 280,
-   "max": 350,
+   "min": 300,
+   "max": 300,
    "currency": "CNY",
    "unit": "per_night",
    "quantity": 3,
-   "total_min": 840,
-   "total_max": 1050,
+   "total_min": 900,
+   "total_max": 900,
    "label": "住宿",
-   "source": "amap-mcp",
-   "source_ref": "高德酒店详情评分4.5/全季中端连锁估价"
+   "source": "user",
+   "source_ref": "用户实价 300/晚×3"
   }
  },
  "days": [
@@ -99,16 +99,16 @@
       {
        "label": "高铁（成都东→西安北）",
        "price": {
-        "min": 263,
+        "min": 300,
         "max": 300,
         "currency": "CNY",
         "unit": "per_person",
         "quantity": 1,
-        "total_min": 263,
+        "total_min": 300,
         "total_max": 300,
-        "label": "高铁",
+        "label": "高铁单程",
         "source": "ctrip-webfetch",
-        "source_ref": "西成高铁二等座263起"
+        "source_ref": "往返600 单程300"
        },
        "attach": "arrival"
       },
@@ -262,6 +262,21 @@
         "label": "散步",
         "source": "computed",
         "source_ref": "护城河免费"
+       }
+      },
+      {
+       "label": "购物/娱乐",
+       "price": {
+        "min": 150,
+        "max": 150,
+        "currency": "CNY",
+        "unit": "per_person",
+        "quantity": 1,
+        "total_min": 150,
+        "total_max": 150,
+        "label": "购物",
+        "source": "computed",
+        "source_ref": "娱乐购物600分摊"
        }
       }
      ]
@@ -625,6 +640,21 @@
         "label": "小食",
         "source": "computed",
         "source_ref": "公园消费"
+       }
+      },
+      {
+       "label": "购物/娱乐",
+       "price": {
+        "min": 150,
+        "max": 150,
+        "currency": "CNY",
+        "unit": "per_person",
+        "quantity": 1,
+        "total_min": 150,
+        "total_max": 150,
+        "label": "购物",
+        "source": "computed",
+        "source_ref": "娱乐购物600分摊"
        }
       }
      ]
@@ -1002,6 +1032,21 @@
         "source": "amap-mcp",
         "source_ref": "约50分钟回程"
        }
+      },
+      {
+       "label": "购物/娱乐",
+       "price": {
+        "min": 150,
+        "max": 150,
+        "currency": "CNY",
+        "unit": "per_person",
+        "quantity": 1,
+        "total_min": 150,
+        "total_max": 150,
+        "label": "购物",
+        "source": "computed",
+        "source_ref": "娱乐购物600分摊"
+       }
       }
      ]
     }
@@ -1227,6 +1272,21 @@
         "source": "amap-mcp",
         "source_ref": "回程估"
        }
+      },
+      {
+       "label": "购物/娱乐",
+       "price": {
+        "min": 150,
+        "max": 150,
+        "currency": "CNY",
+        "unit": "per_person",
+        "quantity": 1,
+        "total_min": 150,
+        "total_max": 150,
+        "label": "购物",
+        "source": "computed",
+        "source_ref": "娱乐购物600分摊"
+       }
       }
      ]
     },
@@ -1311,16 +1371,16 @@
       {
        "label": "高铁（西安北→成都东）",
        "price": {
-        "min": 263,
+        "min": 300,
         "max": 300,
         "currency": "CNY",
         "unit": "per_person",
         "quantity": 1,
-        "total_min": 263,
+        "total_min": 300,
         "total_max": 300,
-        "label": "高铁",
+        "label": "高铁单程",
         "source": "ctrip-webfetch",
-        "source_ref": "西成高铁二等座263起"
+        "source_ref": "往返600 单程300"
        },
        "attach": "departure"
       }
@@ -1503,35 +1563,42 @@
  "budget_summary": {
   "currency": "CNY",
   "by_category": {
-   "transport_local": {
-    "min": 120,
-    "max": 250,
-    "note": "地铁+打车（Day3浐灞泾渭、Day4未央宫打车为主）"
-   },
-   "food": {
-    "min": 430,
-    "max": 780
-   },
-   "tickets": {
-    "min": 30,
-    "max": 140,
-    "note": "浐灞30-40 + 大明宫丹凤门可选0-60 + 兴庆宫/未央宫免费"
+   "trains": {
+    "min": 600,
+    "max": 600,
+    "note": "高铁往返 600（用户实价）"
    },
    "hotel": {
-    "min": 840,
-    "max": 1050,
-    "nights": 3
+    "min": 900,
+    "max": 900,
+    "nights": 3,
+    "note": "酒店3晚 900（用户实价）"
    },
-   "trains": {
-    "min": 526,
+   "tickets": {
+    "min": 150,
+    "max": 150,
+    "note": "门票预计 150"
+   },
+   "transport_local": {
+    "min": 150,
+    "max": 150,
+    "note": "地铁公交打车预计 150"
+   },
+   "food": {
+    "min": 400,
+    "max": 400,
+    "note": "餐饮预计 400"
+   },
+   "shopping": {
+    "min": 600,
     "max": 600,
-    "note": "往返高铁二等座263起"
+    "note": "娱乐购物预计 600"
    }
   },
-  "total_min": 1478,
-  "total_max": 2232,
-  "per_person_min": 1478,
-  "per_person_max": 2232,
-  "disclaimer": "价格为调研日参考，不含个人购物；比原厦门方案省约600-1800元"
+  "total_min": 3000,
+  "total_max": 3000,
+  "per_person_min": 3000,
+  "per_person_max": 3000,
+  "disclaimer": "总预算 3000：高铁600 + 酒店900 + 门票150 + 交通150 + 餐饮400 + 娱乐购物600（用户定）"
  }
 }
