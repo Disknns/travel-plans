@@ -1300,9 +1300,9 @@
           酒店
         </h3>
         <div class="hotel-card" id="hotel-card">
-          <h4 id="hotel-name"><span class="hotel-emoji">🏨</span> 全季酒店（西安钟鼓楼五路口地铁站店）</h4>
-          <p class="address" id="hotel-address">陕西省西安市新城区西五路26号（五路口地铁站A西北口步行250米）</p>
-          <p class="why" id="hotel-why">评分4.5；五路口站是地铁1/4号线换乘枢纽，地铁直达西安北站/大明宫/永宁门；离老城景点密集圈近，晚上永宁门夜景地铁24分钟。</p>
+          <h4 id="hotel-name"><span class="hotel-emoji">🏨</span> 全季酒店（五路口）Day1晚 + 花间堂·与鹿（诗经里）Day2晚</h4>
+          <p class="address" id="hotel-address">Day1晚：新城区西五路26号全季；Day2晚：西咸新区沣河东路818号诗经里景区花间堂·与鹿</p>
+          <p class="why" id="hotel-why">前两晚分开住：Day1全季（五路口地铁枢纽，去永宁门/兴庆宫/大明宫方便）；Day2花间堂（诗经里景区内，评分4.6，环境极好，逛完大明宫退房后过去休整）。Day3晚洗浴中心过夜。</p>
           <div class="links" id="hotel-links">
             <a href="https://uri.amap.com/marker?position=108.9598,34.2696&name=全季酒店（五路口地铁站店）">高德</a>
           </div>
@@ -1393,12 +1393,12 @@
     34.27
   ],
   "hotel": {
-    "name": "全季酒店（西安钟鼓楼五路口地铁站店）",
-    "address": "陕西省西安市新城区西五路26号（五路口地铁站A西北口步行250米）",
+    "name": "全季酒店（五路口）Day1晚 + 花间堂·与鹿（诗经里）Day2晚",
+    "address": "Day1晚：新城区西五路26号全季；Day2晚：西咸新区沣河东路818号诗经里景区花间堂·与鹿",
     "lng": 108.95983,
     "lat": 34.269592,
     "amap_uri": "https://uri.amap.com/marker?position=108.9598,34.2696&name=全季酒店（五路口地铁站店）",
-    "why": "评分4.5；五路口站是地铁1/4号线换乘枢纽，地铁直达西安北站/大明宫/永宁门；离老城景点密集圈近，晚上永宁门夜景地铁24分钟。",
+    "why": "前两晚分开住：Day1全季（五路口地铁枢纽，去永宁门/兴庆宫/大明宫方便）；Day2花间堂（诗经里景区内，评分4.6，环境极好，逛完大明宫退房后过去休整）。Day3晚洗浴中心过夜。",
     "commute": [
       {
         "day": 1,
@@ -1426,16 +1426,16 @@
       }
     ],
     "price": {
-      "min": 300,
-      "max": 300,
+      "min": 400,
+      "max": 500,
       "currency": "CNY",
       "unit": "per_night",
-      "quantity": 3,
-      "total_min": 900,
-      "total_max": 900,
+      "quantity": 2,
+      "total_min": 800,
+      "total_max": 1000,
       "label": "住宿",
-      "source": "user",
-      "source_ref": "用户实价 300/晚×3"
+      "source": "amap-mcp",
+      "source_ref": "全季约300/晚 + 花间堂约500/晚 共2晚"
     }
   },
   "days": [
@@ -1443,8 +1443,8 @@
       "day": 1,
       "date": "2026-08-27",
       "weekday": "周四",
-      "region": "老城（永宁门夜景）",
-      "theme": "高铁到西安 + 永宁门落日夜景",
+      "region": "老城（永宁门 + 兴庆宫夜景）",
+      "theme": "高铁到西安 + 永宁门/兴庆宫夜景",
       "weather": "多云 28℃",
       "weather_emoji": "⛅",
       "weather_decision": "傍晚凉快，适合永宁门看夜景",
@@ -1592,16 +1592,16 @@
         },
         {
           "idx": 4,
-          "time": "18:30",
-          "name": "永宁门 落日 + 夜景",
+          "time": "19:00",
+          "name": "兴庆宫公园 夜景",
           "cat": "scenery",
-          "lng": 108.946952,
-          "lat": 34.248186,
-          "duration_min": 120,
-          "note": "地铁1号转2号 五路口→永宁门约24分钟；不登城（省54元门票），在护城河/南门广场看落日和城楼夜景；永宁门夜景最漂亮",
-          "why": "避开白天暴晒，傍晚看落日+灯光",
+          "lng": 108.983538,
+          "lat": 34.253821,
+          "duration_min": 90,
+          "note": "永宁门→兴庆宫打车/公交约15分钟；免费皇家园林，兴庆湖/沉香亭，晚上散步",
+          "why": "南段园林夜景",
           "weather_sensitive": true,
-          "indoor_backup": "下雨改酒店或商圈商场",
+          "indoor_backup": "附近商场",
           "price": {
             "min": 0,
             "max": 0,
@@ -1610,54 +1610,24 @@
             "quantity": 1,
             "total_min": 0,
             "total_max": 0,
-            "label": "免费观景",
+            "label": "免费",
             "source": "computed",
-            "source_ref": "不登城免费"
+            "source_ref": "免费"
           },
           "slot_costs": [
             {
-              "label": "地铁",
+              "label": "交通",
               "price": {
-                "min": 3,
-                "max": 5,
+                "min": 5,
+                "max": 12,
                 "currency": "CNY",
                 "unit": "per_person",
                 "quantity": 1,
-                "total_min": 3,
-                "total_max": 5,
-                "label": "地铁1号转2号",
+                "total_min": 5,
+                "total_max": 12,
+                "label": "打车/公交",
                 "source": "amap-mcp",
-                "source_ref": "maps_direction_transit 估"
-              }
-            },
-            {
-              "label": "夜景散步",
-              "price": {
-                "min": 0,
-                "max": 0,
-                "currency": "CNY",
-                "unit": "free",
-                "quantity": 1,
-                "total_min": 0,
-                "total_max": 0,
-                "label": "散步",
-                "source": "computed",
-                "source_ref": "护城河免费"
-              }
-            },
-            {
-              "label": "购物/娱乐",
-              "price": {
-                "min": 150,
-                "max": 150,
-                "currency": "CNY",
-                "unit": "per_person",
-                "quantity": 1,
-                "total_min": 150,
-                "total_max": 150,
-                "label": "购物",
-                "source": "computed",
-                "source_ref": "娱乐购物600分摊"
+                "source_ref": "短途估"
               }
             }
           ]
@@ -1758,16 +1728,47 @@
           }
         },
         {
-          "from_idx": 4,
-          "to_idx": 0,
+          "from_idx": 3,
+          "to_idx": 4,
           "mode": "transit",
-          "duration_min": 24,
-          "description": "地铁2号转1号 永宁门→五路口（约24分钟）",
-          "distance_m": 3563,
+          "duration_min": 15,
+          "description": "永宁门→兴庆宫",
+          "distance_m": 3000,
           "path": [
             [
               108.947,
               34.2482
+            ],
+            [
+              108.9835,
+              34.2538
+            ]
+          ],
+          "source": "amap-mcp",
+          "fare": {
+            "min": 5,
+            "max": 12,
+            "currency": "CNY",
+            "unit": "per_person",
+            "quantity": 1,
+            "total_min": 5,
+            "total_max": 12,
+            "label": "打车/公交",
+            "source_ref": "短途估",
+            "source": "amap-mcp"
+          }
+        },
+        {
+          "from_idx": 4,
+          "to_idx": 0,
+          "mode": "transit",
+          "duration_min": 15,
+          "description": "兴庆宫→酒店",
+          "distance_m": 3500,
+          "path": [
+            [
+              108.9835,
+              34.2538
             ],
             [
               108.9598,
@@ -1776,16 +1777,16 @@
           ],
           "source": "amap-mcp",
           "fare": {
-            "min": 3,
-            "max": 5,
+            "min": 5,
+            "max": 12,
             "currency": "CNY",
             "unit": "per_person",
             "quantity": 1,
-            "total_min": 3,
-            "total_max": 5,
-            "label": "地铁",
-            "source": "amap-mcp",
-            "source_ref": "maps_direction_transit 估"
+            "total_min": 5,
+            "total_max": 12,
+            "label": "打车/公交",
+            "source_ref": "短途估",
+            "source": "amap-mcp"
           }
         }
       ],
@@ -1819,13 +1820,13 @@
       "day": 2,
       "date": "2026-08-28",
       "weekday": "周五",
-      "region": "城北（安远门 → 大明宫）+ 兴庆宫",
-      "theme": "北段遗址 + 南段园林",
+      "region": "城北（安远门→大明宫）+ 花间堂",
+      "theme": "早北段遗址，午后换住花间堂",
       "weather": "多云 29℃",
       "weather_emoji": "⛅",
       "weather_decision": "白天散步为主，午后兴庆宫有树荫",
       "center": [
-        108.97,
+        108.9,
         34.28
       ],
       "zoom": 13,
@@ -1971,71 +1972,55 @@
         {
           "idx": 4,
           "time": "14:00",
-          "name": "兴庆宫公园",
-          "cat": "scenery",
-          "lng": 108.983538,
-          "lat": 34.253821,
-          "duration_min": 150,
-          "note": "免费；唐玄宗与杨贵妃的皇家园林旧址；兴庆湖/沉香亭/勤政务本楼遗址；树荫多适合午后散步",
-          "why": "南段园林，免费休闲散步",
-          "weather_sensitive": true,
-          "indoor_backup": "附近商场/咖啡避暑",
+          "name": "花间堂·与鹿（诗经里）入住",
+          "cat": "hotel",
+          "lng": 108.739513,
+          "lat": 34.227224,
+          "duration_min": 120,
+          "note": "大明宫→花间堂打车约50分钟（55km）；入住诗经里景区内，评分4.6，环境极好；下午+晚上在景区/酒店休整",
+          "why": "换住体验型酒店，就在诗经里景区边",
+          "weather_sensitive": false,
           "price": {
-            "min": 0,
-            "max": 0,
+            "min": 400,
+            "max": 500,
             "currency": "CNY",
-            "unit": "free",
+            "unit": "per_night",
             "quantity": 1,
-            "total_min": 0,
-            "total_max": 0,
-            "label": "免费公园",
-            "source": "computed",
-            "source_ref": "免费"
+            "total_min": 400,
+            "total_max": 500,
+            "label": "住宿",
+            "source": "amap-mcp",
+            "source_ref": "花间堂约500/晚"
           },
           "slot_costs": [
             {
-              "label": "交通",
+              "label": "打车（大明宫→花间堂）",
               "price": {
-                "min": 3,
-                "max": 8,
+                "min": 60,
+                "max": 90,
                 "currency": "CNY",
                 "unit": "per_person",
                 "quantity": 1,
-                "total_min": 3,
-                "total_max": 8,
-                "label": "地铁/公交",
+                "total_min": 60,
+                "total_max": 90,
+                "label": "打车",
                 "source": "amap-mcp",
-                "source_ref": "maps_direction_transit 估"
+                "source_ref": "55km打车估"
               }
             },
             {
-              "label": "公园茶座/小食",
+              "label": "诗经里景区",
               "price": {
-                "min": 20,
-                "max": 50,
+                "min": 0,
+                "max": 60,
                 "currency": "CNY",
                 "unit": "per_person",
                 "quantity": 1,
-                "total_min": 20,
-                "total_max": 50,
-                "label": "小食",
+                "total_min": 0,
+                "total_max": 60,
+                "label": "景区",
                 "source": "computed",
-                "source_ref": "公园消费"
-              }
-            },
-            {
-              "label": "购物/娱乐",
-              "price": {
-                "min": 150,
-                "max": 150,
-                "currency": "CNY",
-                "unit": "per_person",
-                "quantity": 1,
-                "total_min": 150,
-                "total_max": 150,
-                "label": "购物",
-                "source": "computed",
-                "source_ref": "娱乐购物600分摊"
+                "source_ref": "景区逛（部分免费）"
               }
             }
           ]
@@ -2047,7 +2032,7 @@
           "to_idx": 1,
           "mode": "transit",
           "duration_min": 10,
-          "description": "地铁2号线 五路口→安远门（约6分钟）",
+          "description": "地铁2号线 五路口→安远门",
           "distance_m": 1800,
           "path": [
             [
@@ -2069,8 +2054,8 @@
             "total_min": 2,
             "total_max": 3,
             "label": "地铁2号线",
-            "source": "amap-mcp",
-            "source_ref": "maps_direction_transit 估"
+            "source_ref": "maps_direction_transit 估",
+            "source": "amap-mcp"
           }
         },
         {
@@ -2078,7 +2063,7 @@
           "to_idx": 2,
           "mode": "transit",
           "duration_min": 15,
-          "description": "安远门→大明宫（地铁/打车约15分钟）",
+          "description": "安远门→大明宫",
           "distance_m": 3000,
           "path": [
             [
@@ -2100,17 +2085,17 @@
             "total_min": 3,
             "total_max": 12,
             "label": "地铁/打车",
-            "source": "amap-mcp",
-            "source_ref": "短途估"
+            "source_ref": "短途估",
+            "source": "amap-mcp"
           }
         },
         {
           "from_idx": 2,
           "to_idx": 3,
           "mode": "walking",
-          "duration_min": 10,
+          "duration_min": 5,
           "description": "大明宫附近午餐",
-          "distance_m": 500,
+          "distance_m": 200,
           "path": [
             [
               108.9635,
@@ -2131,52 +2116,52 @@
             "total_min": 0,
             "total_max": 0,
             "label": "步行",
-            "source": "computed",
-            "source_ref": "零元交通"
+            "source_ref": "零元交通",
+            "source": "amap-mcp"
           }
         },
         {
           "from_idx": 3,
           "to_idx": 4,
-          "mode": "transit",
-          "duration_min": 20,
-          "description": "大明宫→兴庆宫（地铁4号转1号或打车约20分钟）",
-          "distance_m": 5000,
+          "mode": "driving",
+          "duration_min": 50,
+          "description": "打车 大明宫→花间堂（55km/50分钟）",
+          "distance_m": 55000,
           "path": [
             [
               108.9635,
               34.2926
             ],
             [
-              108.9835,
-              34.2538
+              108.7395,
+              34.2272
             ]
           ],
           "source": "amap-mcp",
           "fare": {
-            "min": 3,
-            "max": 15,
+            "min": 60,
+            "max": 90,
             "currency": "CNY",
             "unit": "per_person",
             "quantity": 1,
-            "total_min": 3,
-            "total_max": 15,
-            "label": "地铁/打车",
-            "source": "amap-mcp",
-            "source_ref": "maps_direction_transit 估"
+            "total_min": 60,
+            "total_max": 90,
+            "label": "打车",
+            "source_ref": "55km打车估",
+            "source": "amap-mcp"
           }
         },
         {
           "from_idx": 4,
           "to_idx": 0,
-          "mode": "transit",
-          "duration_min": 15,
-          "description": "兴庆宫→酒店（打车/公交约15分钟）",
-          "distance_m": 3500,
+          "mode": "driving",
+          "duration_min": 50,
+          "description": "花间堂入住（当晚酒店；五路口行李已退，此处为回酒店锚点段）",
+          "distance_m": 55000,
           "path": [
             [
-              108.9835,
-              34.2538
+              108.7395,
+              34.2272
             ],
             [
               108.9598,
@@ -2185,16 +2170,16 @@
           ],
           "source": "amap-mcp",
           "fare": {
-            "min": 5,
-            "max": 12,
+            "min": 60,
+            "max": 90,
             "currency": "CNY",
             "unit": "per_person",
             "quantity": 1,
-            "total_min": 5,
-            "total_max": 12,
-            "label": "打车/公交",
+            "total_min": 60,
+            "total_max": 90,
+            "label": "打车",
             "source": "amap-mcp",
-            "source_ref": "回程估"
+            "source_ref": "花间堂→五路口打车"
           }
         }
       ],
@@ -2223,24 +2208,24 @@
         },
         "dinner": {
           "main": {
-            "name": "兴庆宫/酒店附近",
-            "why": "晚餐就近，不跑远",
+            "name": "诗经里景区/花间堂附近",
+            "why": "入住后酒店附近休整用餐",
             "price": {
-              "min": 60,
-              "max": 120,
+              "min": 80,
+              "max": 150,
               "currency": "CNY",
               "unit": "per_person",
               "quantity": 1,
-              "total_min": 60,
-              "total_max": 120,
+              "total_min": 80,
+              "total_max": 150,
               "label": "餐饮",
               "source": "amap-mcp",
-              "source_ref": "商圈人均估"
+              "source_ref": "景区品质餐饮估"
             }
           },
           "alt": {
-            "name": "洒金桥小吃",
-            "why": "想吃本地回坊就过去"
+            "name": "沣东商圈",
+            "why": "附近商场餐饮"
           }
         }
       },
@@ -2250,84 +2235,68 @@
       "day": 3,
       "date": "2026-08-29",
       "weekday": "周六",
-      "region": "东北（浐灞湿地 → 泾渭分明）",
-      "theme": "自然湿地 + 泾渭奇观",
+      "region": "东北（泾渭分明→浐灞湿地）+ 市区夜",
+      "theme": "自然湿地 + 晚上市区洗浴/电影",
       "weather": "晴 30℃",
       "weather_emoji": "☀️",
       "weather_decision": "午后偏热，湿地有树荫，泾渭分明傍晚看更佳",
       "center": [
-        109.04,
-        34.44
+        108.95,
+        34.4
       ],
       "zoom": 12,
       "pois": [
         {
           "idx": 1,
           "time": "09:00",
-          "name": "浐灞国家湿地公园",
+          "name": "泾渭分明观景台",
           "cat": "scenery",
-          "lng": 109.005477,
-          "lat": 34.419974,
-          "duration_min": 180,
-          "note": "AAAA级，评分4.7；酒店打车约40分钟（21km）；湿地栈道+观鸟（野鸭/白鹭）+生态沙滩",
-          "why": "自然湿地，先到顺路的",
+          "lng": 109.073929,
+          "lat": 34.468983,
+          "duration_min": 120,
+          "note": "花间堂打车约60分钟（55km）；看渭河浊/泾河清'鸳鸯锅'；绿道散步",
+          "why": "自然奇观",
           "weather_sensitive": true,
-          "indoor_backup": "湿地公园内科普馆/亭子避雨",
+          "indoor_backup": "附近小馆避雨",
           "price": {
-            "min": 30,
-            "max": 40,
+            "min": 0,
+            "max": 0,
             "currency": "CNY",
-            "unit": "per_person",
+            "unit": "free",
             "quantity": 1,
-            "total_min": 30,
-            "total_max": 40,
-            "label": "门票",
-            "source": "amap-mcp",
-            "source_ref": "浐灞湿地门票约30-40"
+            "total_min": 0,
+            "total_max": 0,
+            "label": "免费",
+            "source": "computed",
+            "source_ref": "免费"
           },
           "slot_costs": [
             {
-              "label": "打车（酒店→浐灞）",
+              "label": "打车（花间堂→泾渭）",
               "price": {
-                "min": 35,
-                "max": 50,
+                "min": 70,
+                "max": 100,
                 "currency": "CNY",
                 "unit": "per_person",
                 "quantity": 1,
-                "total_min": 35,
-                "total_max": 50,
+                "total_min": 70,
+                "total_max": 100,
                 "label": "打车",
                 "source": "amap-mcp",
-                "source_ref": "21km打车估"
-              },
-              "attach": "departure"
-            },
-            {
-              "label": "门票",
-              "price": {
-                "min": 30,
-                "max": 40,
-                "currency": "CNY",
-                "unit": "per_person",
-                "quantity": 1,
-                "total_min": 30,
-                "total_max": 40,
-                "label": "门票",
-                "source": "amap-mcp",
-                "source_ref": "浐灞湿地门票约30-40"
+                "source_ref": "55km打车估"
               }
             }
           ]
         },
         {
           "idx": 2,
-          "time": "12:30",
+          "time": "12:00",
           "name": "午餐",
           "cat": "food",
-          "lng": 109.0,
-          "lat": 34.42,
+          "lng": 109.0739,
+          "lat": 34.469,
           "duration_min": 60,
-          "note": "浐灞附近或前往泾渭途中吃",
+          "note": "泾渭/浐灞途中吃",
           "why": "午餐补给",
           "price": {
             "min": 50,
@@ -2362,71 +2331,112 @@
         {
           "idx": 3,
           "time": "13:30",
-          "name": "泾渭分明观景台",
+          "name": "浐灞国家湿地公园",
           "cat": "scenery",
-          "lng": 109.073929,
-          "lat": 34.468983,
-          "duration_min": 120,
-          "note": "免费；浐灞→泾渭打车约30分钟（18km）；看渭河浊/泾河清'鸳鸯锅'分界；绿道散步/骑行；5-10月分界最明显",
-          "why": "自然奇观，傍晚光线好",
+          "lng": 109.005477,
+          "lat": 34.419974,
+          "duration_min": 150,
+          "note": "泾渭→浐灞打车约30分钟（18km，顺路）；湿地栈道+观鸟",
+          "why": "自然湿地",
           "weather_sensitive": true,
-          "indoor_backup": "附近小馆/车上避雨",
+          "indoor_backup": "科普馆避雨",
           "price": {
-            "min": 0,
-            "max": 0,
+            "min": 30,
+            "max": 40,
             "currency": "CNY",
-            "unit": "free",
+            "unit": "per_person",
             "quantity": 1,
-            "total_min": 0,
-            "total_max": 0,
-            "label": "免费",
-            "source": "computed",
-            "source_ref": "观景台免费"
+            "total_min": 30,
+            "total_max": 40,
+            "label": "门票",
+            "source": "amap-mcp",
+            "source_ref": "浐灞湿地门票30-40"
           },
           "slot_costs": [
             {
-              "label": "打车（浐灞→泾渭）",
+              "label": "门票",
               "price": {
                 "min": 30,
-                "max": 45,
+                "max": 40,
                 "currency": "CNY",
                 "unit": "per_person",
                 "quantity": 1,
                 "total_min": 30,
-                "total_max": 45,
-                "label": "打车",
+                "total_max": 40,
+                "label": "门票",
                 "source": "amap-mcp",
-                "source_ref": "18km打车估"
+                "source_ref": "浐灞湿地门票30-40"
+              }
+            }
+          ]
+        },
+        {
+          "idx": 4,
+          "time": "17:00",
+          "name": "回市区：电影 + 洗浴中心过夜",
+          "cat": "shopping",
+          "lng": 108.9598,
+          "lat": 34.2696,
+          "duration_min": 240,
+          "note": "浐灞→市区打车约48分钟（27km）；晚上看电影，去足浴/洗浴中心过夜（不住酒店）",
+          "why": "洗浴中心过夜，体验式住宿",
+          "weather_sensitive": false,
+          "price": {
+            "min": 150,
+            "max": 300,
+            "currency": "CNY",
+            "unit": "per_person",
+            "quantity": 1,
+            "total_min": 150,
+            "total_max": 300,
+            "label": "电影+洗浴",
+            "source": "amap-mcp",
+            "source_ref": "电影60-80 + 洗浴过夜100-200"
+          },
+          "slot_costs": [
+            {
+              "label": "电影",
+              "price": {
+                "min": 60,
+                "max": 80,
+                "currency": "CNY",
+                "unit": "per_person",
+                "quantity": 1,
+                "total_min": 60,
+                "total_max": 80,
+                "label": "电影",
+                "source": "computed",
+                "source_ref": "票价估"
               }
             },
             {
-              "label": "打车回酒店",
+              "label": "洗浴/足浴过夜",
               "price": {
-                "min": 45,
+                "min": 100,
+                "max": 200,
+                "currency": "CNY",
+                "unit": "per_person",
+                "quantity": 1,
+                "total_min": 100,
+                "total_max": 200,
+                "label": "洗浴",
+                "source": "amap-mcp",
+                "source_ref": "洗浴中心过夜费估"
+              }
+            },
+            {
+              "label": "打车（浐灞→市区）",
+              "price": {
+                "min": 40,
                 "max": 60,
                 "currency": "CNY",
                 "unit": "per_person",
                 "quantity": 1,
-                "total_min": 45,
+                "total_min": 40,
                 "total_max": 60,
                 "label": "打车",
                 "source": "amap-mcp",
-                "source_ref": "约50分钟回程"
-              }
-            },
-            {
-              "label": "购物/娱乐",
-              "price": {
-                "min": 150,
-                "max": 150,
-                "currency": "CNY",
-                "unit": "per_person",
-                "quantity": 1,
-                "total_min": 150,
-                "total_max": 150,
-                "label": "购物",
-                "source": "computed",
-                "source_ref": "娱乐购物600分摊"
+                "source_ref": "27km打车估"
               }
             }
           ]
@@ -2437,31 +2447,31 @@
           "from_idx": 0,
           "to_idx": 1,
           "mode": "driving",
-          "duration_min": 40,
-          "description": "打车 酒店→浐灞湿地（21km/40分钟）",
-          "distance_m": 21081,
+          "duration_min": 60,
+          "description": "打车 花间堂→泾渭分明（55km/60分钟）",
+          "distance_m": 55000,
           "path": [
             [
-              108.9598,
-              34.2696
+              108.7395,
+              34.2272
             ],
             [
-              109.0055,
-              34.42
+              109.0739,
+              34.469
             ]
           ],
           "source": "amap-mcp",
           "fare": {
-            "min": 35,
-            "max": 50,
+            "min": 70,
+            "max": 100,
             "currency": "CNY",
             "unit": "per_person",
             "quantity": 1,
-            "total_min": 35,
-            "total_max": 50,
+            "total_min": 70,
+            "total_max": 100,
             "label": "打车",
-            "source": "amap-mcp",
-            "source_ref": "21km打车估"
+            "source_ref": "55km打车估",
+            "source": "amap-mcp"
           }
         },
         {
@@ -2469,16 +2479,16 @@
           "to_idx": 2,
           "mode": "walking",
           "duration_min": 5,
-          "description": "浐灞附近午餐",
-          "distance_m": 300,
+          "description": "午餐",
+          "distance_m": 100,
           "path": [
             [
-              109.0055,
-              34.42
+              109.0739,
+              34.469
             ],
             [
-              109.0,
-              34.42
+              109.0739,
+              34.469
             ]
           ],
           "source": "amap-mcp",
@@ -2491,8 +2501,8 @@
             "total_min": 0,
             "total_max": 0,
             "label": "步行",
-            "source": "computed",
-            "source_ref": "零元交通"
+            "source_ref": "零元交通",
+            "source": "amap-mcp"
           }
         },
         {
@@ -2500,7 +2510,7 @@
           "to_idx": 3,
           "mode": "driving",
           "duration_min": 30,
-          "description": "打车 浐灞→泾渭分明（18km/30分钟）",
+          "description": "打车 泾渭→浐灞（18km/30分钟）",
           "distance_m": 18318,
           "path": [
             [
@@ -2508,8 +2518,8 @@
               34.42
             ],
             [
-              109.0739,
-              34.469
+              109.0055,
+              34.42
             ]
           ],
           "source": "amap-mcp",
@@ -2522,21 +2532,21 @@
             "total_min": 30,
             "total_max": 45,
             "label": "打车",
-            "source": "amap-mcp",
-            "source_ref": "18km打车估"
+            "source_ref": "18km打车估",
+            "source": "amap-mcp"
           }
         },
         {
           "from_idx": 3,
-          "to_idx": 0,
+          "to_idx": 4,
           "mode": "driving",
-          "duration_min": 50,
-          "description": "打车 泾渭→酒店（约50分钟）",
-          "distance_m": 25000,
+          "duration_min": 48,
+          "description": "打车 浐灞→市区（27km/48分钟）",
+          "distance_m": 27000,
           "path": [
             [
-              109.0739,
-              34.469
+              109.0055,
+              34.42
             ],
             [
               108.9598,
@@ -2545,24 +2555,55 @@
           ],
           "source": "amap-mcp",
           "fare": {
-            "min": 45,
+            "min": 40,
             "max": 60,
             "currency": "CNY",
             "unit": "per_person",
             "quantity": 1,
-            "total_min": 45,
+            "total_min": 40,
             "total_max": 60,
             "label": "打车",
+            "source_ref": "27km打车估",
+            "source": "amap-mcp"
+          }
+        },
+        {
+          "from_idx": 4,
+          "to_idx": 0,
+          "mode": "walking",
+          "duration_min": 5,
+          "description": "洗浴中心过夜（当晚落脚点）",
+          "distance_m": 100,
+          "path": [
+            [
+              108.9598,
+              34.2696
+            ],
+            [
+              108.9598,
+              34.2696
+            ]
+          ],
+          "source": "amap-mcp",
+          "fare": {
+            "min": 0,
+            "max": 0,
+            "currency": "CNY",
+            "unit": "free",
+            "quantity": 1,
+            "total_min": 0,
+            "total_max": 0,
+            "label": "步行",
             "source": "amap-mcp",
-            "source_ref": "约50分钟回程"
+            "source_ref": "洗浴中心过夜"
           }
         }
       ],
       "meals": {
         "lunch": {
           "main": {
-            "name": "浐灞/途中简餐",
-            "why": "自然行程，就地解决",
+            "name": "泾渭/浐灞途中",
+            "why": "自然行程就地解决",
             "price": {
               "min": 50,
               "max": 100,
@@ -2575,10 +2616,24 @@
               "source": "amap-mcp",
               "source_ref": "简餐人均估"
             }
-          },
-          "alt": {
-            "name": "高陵土豆片夹馍/酱牛肉",
-            "why": "泾渭当地特色"
+          }
+        },
+        "dinner": {
+          "main": {
+            "name": "市区（看电影前）",
+            "why": "回市区晚餐",
+            "price": {
+              "min": 60,
+              "max": 120,
+              "currency": "CNY",
+              "unit": "per_person",
+              "quantity": 1,
+              "total_min": 60,
+              "total_max": 120,
+              "label": "餐饮",
+              "source": "amap-mcp",
+              "source_ref": "商圈人均估"
+            }
           }
         }
       },
@@ -2589,7 +2644,7 @@
       "date": "2026-08-30",
       "weekday": "周日",
       "region": "城西（未央宫）+ 返程",
-      "theme": "未央宫散步 + 下午高铁回成都",
+      "theme": "未央宫上午 + 下午高铁回成都",
       "weather": "多云 29℃",
       "weather_emoji": "⛅",
       "weather_decision": "上午散步，中午退房返程",
@@ -2602,15 +2657,15 @@
         {
           "idx": 1,
           "time": "09:00",
-          "name": "汉长安城未央宫国家考古遗址公园",
+          "name": "未央宫国家考古遗址公园",
           "cat": "scenery",
           "lng": 108.862,
           "lat": 34.303,
           "duration_min": 150,
-          "note": "评分4.7，免费；汉朝皇宫遗址，大片草地+夯土遗址，人少清静适合散步；06:00-22:00",
-          "why": "汉朝皇宫遗址，休闲散步",
+          "note": "市区打车约40分钟；汉朝皇宫遗址，免费，大片草地",
+          "why": "汉宫遗址散步",
           "weather_sensitive": true,
-          "indoor_backup": "附近商场/回酒店",
+          "indoor_backup": "附近商场",
           "price": {
             "min": 0,
             "max": 0,
@@ -2619,54 +2674,24 @@
             "quantity": 1,
             "total_min": 0,
             "total_max": 0,
-            "label": "免费公园",
+            "label": "免费",
             "source": "computed",
             "source_ref": "免费"
           },
           "slot_costs": [
             {
-              "label": "打车（酒店→未央宫）",
+              "label": "打车（市区→未央宫）",
               "price": {
-                "min": 25,
-                "max": 40,
+                "min": 30,
+                "max": 50,
                 "currency": "CNY",
                 "unit": "per_person",
                 "quantity": 1,
-                "total_min": 25,
-                "total_max": 40,
+                "total_min": 30,
+                "total_max": 50,
                 "label": "打车",
                 "source": "amap-mcp",
-                "source_ref": "约10km打车估"
-              }
-            },
-            {
-              "label": "打车回酒店",
-              "price": {
-                "min": 25,
-                "max": 40,
-                "currency": "CNY",
-                "unit": "per_person",
-                "quantity": 1,
-                "total_min": 25,
-                "total_max": 40,
-                "label": "打车",
-                "source": "amap-mcp",
-                "source_ref": "回程估"
-              }
-            },
-            {
-              "label": "购物/娱乐",
-              "price": {
-                "min": 150,
-                "max": 150,
-                "currency": "CNY",
-                "unit": "per_person",
-                "quantity": 1,
-                "total_min": 150,
-                "total_max": 150,
-                "label": "购物",
-                "source": "computed",
-                "source_ref": "娱乐购物600分摊"
+                "source_ref": "打车估"
               }
             }
           ]
@@ -2674,39 +2699,39 @@
         {
           "idx": 2,
           "time": "12:00",
-          "name": "返回酒店退房",
-          "cat": "hotel",
-          "lng": 108.95983,
-          "lat": 34.269592,
-          "duration_min": 45,
-          "note": "退房取行李",
-          "why": "退房后去高铁站",
+          "name": "午餐",
+          "cat": "food",
+          "lng": 108.862,
+          "lat": 34.303,
+          "duration_min": 60,
+          "note": "未央宫附近或路上",
+          "why": "午餐",
           "price": {
-            "min": 0,
-            "max": 0,
+            "min": 40,
+            "max": 80,
             "currency": "CNY",
-            "unit": "free",
+            "unit": "per_person",
             "quantity": 1,
-            "total_min": 0,
-            "total_max": 0,
-            "label": "退房",
-            "source": "computed",
-            "source_ref": "房费见抽屉住宿"
+            "total_min": 40,
+            "total_max": 80,
+            "label": "餐饮",
+            "source": "amap-mcp",
+            "source_ref": "简餐人均估"
           },
           "slot_costs": [
             {
-              "label": "退房",
+              "label": "餐饮",
               "price": {
-                "min": 0,
-                "max": 0,
+                "min": 40,
+                "max": 80,
                 "currency": "CNY",
-                "unit": "free",
+                "unit": "per_person",
                 "quantity": 1,
-                "total_min": 0,
-                "total_max": 0,
-                "label": "退房",
-                "source": "computed",
-                "source_ref": "房费见抽屉住宿"
+                "total_min": 40,
+                "total_max": 80,
+                "label": "餐饮",
+                "source": "amap-mcp",
+                "source_ref": "简餐人均估"
               }
             }
           ]
@@ -2719,8 +2744,8 @@
           "lng": 108.938768,
           "lat": 34.37939,
           "duration_min": 60,
-          "note": "地铁4号线 五路口→西安北站约30分钟；16:00高铁回成都",
-          "why": "下午高铁返程，不用早起",
+          "note": "未央宫→北站打车约40分钟（约20km）；16:00高铁回成都",
+          "why": "下午高铁返程",
           "price": {
             "min": 3,
             "max": 5,
@@ -2729,44 +2754,43 @@
             "quantity": 1,
             "total_min": 3,
             "total_max": 5,
-            "label": "地铁4号线",
+            "label": "地铁/打车",
             "source": "amap-mcp",
             "source_ref": "maps_direction_transit 估"
           },
           "slot_costs": [
             {
-              "label": "地铁4号线",
+              "label": "打车（未央宫→北站）",
               "price": {
-                "min": 3,
-                "max": 5,
+                "min": 35,
+                "max": 55,
                 "currency": "CNY",
                 "unit": "per_person",
                 "quantity": 1,
-                "total_min": 3,
-                "total_max": 5,
-                "label": "地铁4号线",
+                "total_min": 35,
+                "total_max": 55,
+                "label": "打车",
                 "source": "amap-mcp",
-                "source_ref": "maps_direction_transit 估"
+                "source_ref": "20km打车估"
               }
             },
             {
               "label": "高铁（西安北→成都东）",
               "price": {
-                "min": 300,
+                "min": 263,
                 "max": 300,
                 "currency": "CNY",
                 "unit": "per_person",
                 "quantity": 1,
-                "total_min": 300,
+                "total_min": 263,
                 "total_max": 300,
-                "label": "高铁单程",
+                "label": "高铁",
                 "source": "ctrip-webfetch",
-                "source_ref": "往返600 单程300"
+                "source_ref": "西成高铁263起"
               },
               "attach": "departure"
             }
-          ],
-          "end_time": "14:00"
+          ]
         }
       ],
       "transports": [
@@ -2775,7 +2799,7 @@
           "to_idx": 1,
           "mode": "driving",
           "duration_min": 40,
-          "description": "打车 酒店→未央宫（约40分钟/10km）",
+          "description": "打车 市区→未央宫",
           "distance_m": 12000,
           "path": [
             [
@@ -2789,78 +2813,78 @@
           ],
           "source": "amap-mcp",
           "fare": {
-            "min": 25,
-            "max": 40,
+            "min": 30,
+            "max": 50,
             "currency": "CNY",
             "unit": "per_person",
             "quantity": 1,
-            "total_min": 25,
-            "total_max": 40,
+            "total_min": 30,
+            "total_max": 50,
             "label": "打车",
-            "source": "amap-mcp",
-            "source_ref": "约10km打车估"
+            "source_ref": "打车估",
+            "source": "amap-mcp"
           }
         },
         {
           "from_idx": 1,
           "to_idx": 2,
-          "mode": "driving",
-          "duration_min": 40,
-          "description": "打车 未央宫→酒店（约40分钟）",
-          "distance_m": 12000,
+          "mode": "walking",
+          "duration_min": 5,
+          "description": "午餐",
+          "distance_m": 100,
           "path": [
             [
               108.862,
               34.303
             ],
             [
-              108.9598,
-              34.2696
+              108.862,
+              34.303
             ]
           ],
           "source": "amap-mcp",
           "fare": {
-            "min": 25,
-            "max": 40,
+            "min": 0,
+            "max": 0,
             "currency": "CNY",
-            "unit": "per_person",
+            "unit": "free",
             "quantity": 1,
-            "total_min": 25,
-            "total_max": 40,
-            "label": "打车",
-            "source": "amap-mcp",
-            "source_ref": "回程估"
+            "total_min": 0,
+            "total_max": 0,
+            "label": "步行",
+            "source_ref": "零元交通",
+            "source": "amap-mcp"
           }
         },
         {
           "from_idx": 2,
           "to_idx": 3,
-          "mode": "transit",
-          "duration_min": 30,
-          "description": "地铁4号线 五路口→西安北站（约30分钟）",
-          "distance_m": 9200,
+          "mode": "driving",
+          "duration_min": 40,
+          "description": "打车 未央宫→北站（约20km/40分钟）",
+          "distance_m": 20000,
           "path": [
             [
-              108.9598,
-              34.2696
+              108.862,
+              34.303
             ],
             [
-              108.9388,
-              34.3794
+              108.862,
+              34.303
             ]
           ],
           "source": "amap-mcp",
           "fare": {
-            "min": 3,
-            "max": 5,
+            "min": 35,
+            "max": 55,
             "currency": "CNY",
             "unit": "per_person",
             "quantity": 1,
-            "total_min": 3,
-            "total_max": 5,
-            "label": "地铁4号线",
-            "source": "amap-mcp",
-            "source_ref": "maps_direction_transit 估"
+            "total_min": 35,
+            "total_max": 55,
+            "label": "打车",
+            "source_ref": "20km打车估",
+            "source": "amap-mcp"
           }
         }
       ],
@@ -2881,10 +2905,6 @@
               "source": "amap-mcp",
               "source_ref": "简餐人均估"
             }
-          },
-          "alt": {
-            "name": "高铁上解决",
-            "why": "时间紧就车上吃"
           }
         }
       }
@@ -2918,8 +2938,8 @@
       "deadline": "已订",
       "url": "https://trains.ctrip.com/trainbooking/xianbei-chengdudong",
       "note": "8.30 16:00返程；二等座约263元",
-      "depart_time": "16:30",
-      "time": "16:30"
+      "depart_time": "16:00",
+      "time": "16:00"
     },
     {
       "item": "高铁（成都东→西安北）",
@@ -2947,40 +2967,40 @@
       "trains": {
         "min": 600,
         "max": 600,
-        "note": "高铁往返 600（用户实价）"
+        "note": "高铁往返 600"
       },
       "hotel": {
         "min": 900,
-        "max": 900,
-        "nights": 3,
-        "note": "酒店3晚 900（用户实价）"
+        "max": 1100,
+        "nights": 2,
+        "note": "全季300 + 花间堂500 + 洗浴过夜100-200"
       },
       "tickets": {
         "min": 150,
         "max": 150,
-        "note": "门票预计 150"
+        "note": "门票预计 150（浐灞40+大明宫可选+其余）"
       },
       "transport_local": {
-        "min": 150,
-        "max": 150,
-        "note": "地铁公交打车预计 150"
+        "min": 300,
+        "max": 500,
+        "note": "地铁公交打车（双酒店+郊区车程多）"
       },
       "food": {
         "min": 400,
-        "max": 400,
-        "note": "餐饮预计 400"
+        "max": 500,
+        "note": "餐饮预计 400-500"
       },
       "shopping": {
         "min": 600,
         "max": 600,
-        "note": "娱乐购物预计 600"
+        "note": "娱乐购物预计 600（含电影）"
       }
     },
-    "total_min": 3000,
-    "total_max": 3000,
-    "per_person_min": 3000,
-    "per_person_max": 3000,
-    "disclaimer": "总预算 3000：高铁600 + 酒店900 + 门票150 + 交通150 + 餐饮400 + 娱乐购物600（用户定）"
+    "total_min": 2950,
+    "total_max": 3450,
+    "per_person_min": 2950,
+    "per_person_max": 3450,
+    "disclaimer": "总预算约2950-3450：高铁600 + 住宿900-1100 + 门票150 + 交通300-500 + 餐饮400-500 + 娱乐购物600（含电影）"
   }
 };
   </script>
